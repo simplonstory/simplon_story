@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+footer {
+  width: 95%;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 0%;
+  left: 2%
+}
+
+.paginations {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fleches {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
