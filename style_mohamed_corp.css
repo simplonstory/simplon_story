@@ -1,0 +1,53 @@
+body {
+	background-image: url("planche.jpg");
+	background-attachment: fixed;
+	margin: 0
+}
+.container {
+	margin: 20px;
+	box-sizing: border-box;
+	display: flex;
+}
+.page {
+	width: 50vw;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.page_left {
+	border-radius: 10px;
+	box-shadow: -10px -10px 15px black;
+	background-image: url("papier_fond.jpg");
+}
+.page_right {
+	border-radius: 10px;
+	box-shadow: 10px -10px 15px black;
+	background-image: url("papier_fond.jpg");
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width:auto;
+}
+.row_col {
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+}
+.image {
+	margin: 5px;
+	position: relative;
+}
+
+.bull {
+	position: absolute;
+	background-color: rgba(255,255,255,1);
+	color: black;
+	padding: 5px;
+	z-index: 6;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
