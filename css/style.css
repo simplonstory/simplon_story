@@ -5,12 +5,13 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  text-align: center;
 }
 
 section{
   flex: 5;
-  background-color: green;
-  opacity: 0.8;
+  background-color: grey;
+  opacity: 0.3;
 }
 
 footer{
@@ -26,8 +27,6 @@ footer{
 }
 
 #pagetitle{
-  justify-content: center;
-  align-items: center;
   flex: 3;
   background-color: purple;
   opacity: 0.7;
@@ -38,7 +37,7 @@ footer{
   opacity: 0.7;
 }
 
-/* classes css de normalisation du code */
+/* classes css de normalisation de la page */
 
 .flexybox{
   display: flex;
@@ -52,9 +51,76 @@ footer{
   flex-direction: column;
 }
 
+.justicenter{
+  justify-content: center;
+}
+
+.aligncenter{
+  align-items: center;
+}
+
 /* css de spécificité */
 
 .container{
   width: 100vw;
   height: 100vh;
+}
+
+/* Section des temporaires; à ranger après utilisation */
+
+#menusource{
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 17%;
+}
+
+#menusource>li{
+  background-color: red;
+  position: relative;
+  padding: 6% 0;
+  border-style: outset;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 20%/80%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 17px 12px 25px -10px;
+}
+
+#openedmenu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-bottom-left-radius: 39px;
+  border-bottom-right-radius: 39px;
+  box-shadow: 17px 20px 25px -10px;
+  background-color: yellow;
+}
+
+
+#lastlielem{
+  border-radius: 20%/80%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#openedmenu li{
+  padding: 4%;
+  border-style: outset;
+  border-width: 1px;
+  border-color: grey;
+}
+
+a{
+  color: black;
+}
+
+#menusource:hover #openedmenu{
+  display: block;
+}
+
+#menusource:hover #menusource>li{
+  box-shadow: 0 0 0 0;
 }
