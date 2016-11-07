@@ -1,38 +1,40 @@
 body {
-	background-image: url("planche.jpg");
+	background-image: url("../images/planche.jpg");
 	background-attachment: fixed;
 	margin: 0
+}
+img {
+	width: auto;
 }
 .container {
 	margin: 20px;
 	box-sizing: border-box;
 	display: flex;
+	background-image: url("../images/fond_double.jpg");
+	background-repeat: round;
 }
 .page {
-	width: 50vw;
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px;
 }
 .page_left {
-	border-radius: 10px;
 	box-shadow: -10px -10px 15px black;
-	background-image: url("papier_fond.jpg");
+
 }
 .page_right {
-	border-radius: 10px;
 	box-shadow: 10px -10px 15px black;
-	background-image: url("papier_fond.jpg");
+
 }
 .row {
 	display: flex;
-	flex-wrap: wrap;
 	width:auto;
+	flex-wrap: wrap;
 }
-.row_col {
+.col {
 	flex-direction: column;
 	display: flex;
-	flex-wrap: wrap;
 }
 .image {
 	margin: 5px;
@@ -48,6 +50,18 @@ body {
 	font-size: 12px;
 	text-align: center;
 	width: auto;
-	height: auto;
 }
-
+@media (max-width:1024px) {
+	.container {
+		background-image: url("../images/papier_fond.jpg");
+		margin: auto;
+		display: block;
+		width: 97vw;
+	}
+	.page {
+		width: 97%;
+	}
+	.page_left, .page_right {
+		box-shadow:none;
+	}
+}
