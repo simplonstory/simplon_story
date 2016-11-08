@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Blacksword';
+  src: url('Blacksword.otf');
+}
+
+body {
+  margin: 0;
+}
+
+footer {
+  width: 95%;
+  height: 10%;
+  background-image: url("interieur2.jpg");
+  position: fixed;
+  bottom: 0%;
+  left: 2%
+}
+
+/*COPYRIGHT*/
+
+p {
+  font-family: 'Blacksword';
+  text-shadow: 1px 1px 15px red;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+      width: auto;
+      position: absolute;
+      bottom: 5px;
+      left: 115px;
+      font-size: 10px;
+    }
+}
+
+/*PAGINATION*/
+
+.paginations {
+  width: 100%;
+  margin-top: 0.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-shadow: red;
+  font-family: 'Blacksword';
+}
+
+.pagination_droite, .pagination_gauche {
+  border-radius: 100%;
+  border : 1px solid red;
+  box-shadow: 2px 2px 2px red;
+  background-color: white;
+  font-weight: bold;
+  color: #3f3b3b ;
+}
+
+@media screen and (max-width: 600px) {
+  .pagination_droite, .pagination_gauche {
+    font-size: 0.7em;
+  }
+}
+
+
+/*PAGINATION + FLECHES*/
+
+.pagination_droite, .fleche_droite {
+  margin-right: 1%;
+}
+
+.pagination_gauche, .fleche_gauche {
+  margin-left: 1%;
+}
+
+/*FLECHES*/
+
+button a {
+  text-decoration: none;
+  color: #3f3b3b;
+  font-weight: bold;
+
+}
+
+.fleches {
+  width: 100%;
+  padding-top: 0.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fleche_gauche, .fleche_droite {
+  border-radius: 100%;
+  border : 1px solid red;
+  box-shadow: 2px 2px 2px red;
+  background-color: white;
+}
+
+.fleche_gauche:hover, .fleche_droite:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .fleche_droite, .fleche_gauche {
+    font-size: 0.7em;
+  }
+}
